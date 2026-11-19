@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessibility | Grace Bilingual Nursery &amp; Primary School</title>
+  <meta name="description" content="How the Grace Bilingual Nursery and Primary School website is built for accessibility: keyboard navigation, contrast, reduced motion and text alternatives.">
+  <link rel="canonical" href="https://www.gbnpsf.cm/accessibility.html">
+  <meta name="robots" content="noindex, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Grace Bilingual Nursery &amp; Primary School">
+  <meta property="og:title" content="Accessibility | Grace Bilingual Nursery &amp; Primary School">
+  <meta property="og:description" content="How the school website is built for keyboard, screen reader and reduced-motion use.">
+  <meta property="og:url" content="https://www.gbnpsf.cm/accessibility.html">
+  <meta name="theme-color" content="#17362a">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Instrument+Sans:ital,wght@0,400..600;1,400..500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="">
+  <div data-site-header></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page">Accessibility</li>
+        </ol>
+        <p class="eyebrow"><span>01</span> Accessibility</p>
+        <h1 style="max-width:24ch">A school website every parent can use.</h1>
+        <p class="lede">Keyboard navigation, readable contrast, honest alt text and no motion you did not ask for.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap--narrow prose">
+        <h2>What is in place</h2>
+        <ul class="checklist">
+          <li>A skip link to the main content on every page.</li>
+          <li>Full keyboard operation, including the menu, the portal list, the gallery and the calendar.</li>
+          <li>Visible focus outlines on links, buttons and form fields.</li>
+          <li>Text and background colours chosen to meet WCAG AA contrast for body copy.</li>
+          <li>Animation reduced or removed automatically when your device asks for reduced motion.</li>
+          <li>Decorative graphics hidden from screen readers; images and upload slots carry text labels.</li>
+          <li>Forms with real labels, required-field markers and clear validation messages.</li>
+        </ul>
+
+        <h2>Known limitations</h2>
+        <p>
+          Image placeholders are labelled slots, not photographs, so there is no alt text to write
+          yet — when you replace them with real images, describe what the photograph shows rather than
+          repeating the caption.
+        </p>
+        <p>
+          The interactive calendar is operable by keyboard, but a static list of dates is also
+          provided on the news and academics pages so the information is never only inside a widget.
+        </p>
+
+        <h2>Tell us what is broken</h2>
+        <p>
+          If something on this site is hard to use with a screen reader, a keyboard, or a slow
+          connection, please write to <a href="mailto:hello@gbnpsf.cm">hello@gbnpsf.cm</a> or call the
+          office. We would rather fix it than be told it meets a standard.
+        </p>
+
+        <p class="note" style="margin-top:2rem">Last reviewed November 2026.</p>
+      </div>
+    </section>
+  </main>
+
+  <div data-site-footer></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>

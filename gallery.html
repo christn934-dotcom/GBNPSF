@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | Photographs and films · Grace Bilingual Foumban</title>
+  <meta name="description" content="Photographs and short films from Grace Bilingual Nursery and Primary School, Foumban — campus, classrooms, pupils, sport, arts and school events. Filter by category or search.">
+  <link rel="canonical" href="https://www.gbnpsf.cm/gallery.html">
+  <meta name="theme-color" content="#17362a">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Grace Bilingual Nursery &amp; Primary School">
+  <meta property="og:title" content="Gallery | Grace Bilingual Nursery &amp; Primary School">
+  <meta property="og:description" content="Campus, classrooms, sport, arts and events — photographs and films from our school in Foumban.">
+  <meta property="og:url" content="https://www.gbnpsf.cm/gallery.html">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gallery | Grace Bilingual, Foumban">
+  <meta name="twitter:description" content="Photographs and films from the school year.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Instrument+Sans:ital,wght@0,400..600;1,400..500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.gbnpsf.cm/" },
+      { "@type": "ListItem", "position": 2, "name": "Gallery", "item": "https://www.gbnpsf.cm/gallery.html" }
+    ]
+  }
+  </script>
+</head>
+
+<body data-page="gallery">
+  <div data-progress aria-hidden="true"></div>
+  <div data-site-header></div>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="wrap">
+        <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page">Gallery</li>
+        </ol>
+        <div class="page-hero__grid">
+          <div>
+            <p class="eyebrow"><span>01</span> Gallery</p>
+            <h1>Ordinary days, <em class="accent">kept</em>.</h1>
+            <p class="lede">Assemblies, lessons, matches and concerts. Filter by category or search for a class, a year or an event.</p>
+          </div>
+          <div class="page-hero__media">
+            <div class="ph" data-label="Upload School Image Here" data-hint="1600 × 1000 px"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ photos -->
+    <section class="section" id="photos">
+      <div class="wrap">
+        <div class="filters">
+          <div class="chips" role="group" aria-label="Filter photographs by category">
+            <button class="chip" type="button" data-filter="all" aria-pressed="true">All photographs</button>
+            <button class="chip" type="button" data-filter="campus" aria-pressed="false">Campus</button>
+            <button class="chip" type="button" data-filter="classroom" aria-pressed="false">Classrooms</button>
+            <button class="chip" type="button" data-filter="pupils" aria-pressed="false">Pupils</button>
+            <button class="chip" type="button" data-filter="sport" aria-pressed="false">Sport</button>
+            <button class="chip" type="button" data-filter="arts" aria-pressed="false">Arts</button>
+            <button class="chip" type="button" data-filter="events" aria-pressed="false">Events</button>
+          </div>
+          <div class="search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+            <label class="sr-only" for="gallery-search">Search photographs</label>
+            <input id="gallery-search" type="search" placeholder="Search photographs…" data-gallery-search>
+          </div>
+        </div>
+
+        <p class="small-caps" style="margin-bottom:1.25rem" aria-live="polite">
+          <span data-gallery-count>18 items</span>
+        </p>
+
+        <div class="gallery-grid" data-gallery>
+          <noscript>
+            <p class="note">The gallery needs JavaScript to filter and open photographs. Photographs will still be listed here once uploaded.</p>
+          </noscript>
+        </div>
+
+        <div class="gallery-empty" data-gallery-empty hidden>
+          <strong>No photographs match that search</strong>
+          <span>Try another word, or clear the filters to see everything.</span>
+        </div>
+
+        <div class="callout" style="margin-top:2.5rem">
+          <strong>Adding your own photographs.</strong> Each tile is a labelled placeholder.
+          Upload an image to <code>assets/images/</code> and replace the entry in
+          <code>js/data.js</code> with an <code>&lt;img&gt;</code> tag — captions and categories stay the same.
+          Photographs of children are published only with written permission from guardians.
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ videos -->
+    <section class="section section--paper2" id="videos">
+      <div class="wrap">
+        <div class="section-head">
+          <div data-reveal>
+            <p class="eyebrow"><span>02</span> Films</p>
+            <h2>Short films from the school year.</h2>
+          </div>
+          <p class="lede" data-reveal>
+            Videos are embedded from the school's own channel. Slots below are ready
+            for uploads; each opens in a preview panel.
+          </p>
+        </div>
+
+        <div class="video-grid" data-videos>
+          <noscript><p class="note">Enable JavaScript to load the video gallery.</p></noscript>
+        </div>
+
+        <p class="note" style="margin-top:1.5rem">Never publish a video showing a child without guardian consent on file.</p>
+      </div>
+    </section>
+
+    <section class="band--forest cta-band">
+      <div class="wrap">
+        <div class="cta-band__inner">
+          <div data-reveal>
+            <p class="eyebrow" style="color:var(--gold-soft)"><span>03</span> Visit</p>
+            <h2>Photographs are no substitute for a morning here.</h2>
+            <p class="lede">Tours on Tuesdays and Thursdays, 09:00 to 11:00, during term time.</p>
+          </div>
+          <div class="cta-band__aside" data-reveal>
+            <a class="btn btn--light" href="contact.html">Book a tour</a>
+            <a class="btn btn--ghost" style="--btn-fg:var(--cream);border-color:rgba(247,243,234,.35)" href="admissions.html#apply">Apply now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div data-site-footer></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>

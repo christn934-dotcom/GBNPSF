@@ -1,0 +1,16 @@
+# Grace Bilingual Nursery and Primary School, Foumban
+# Public pages are open to crawlers. Portal pages carry a noindex meta tag
+# because they are reserved shells for the school management system.
+
+User-agent: *
+Allow: /
+Disallow: /student-portal.html
+Disallow: /parent-portal.html
+Disallow: /teacher-portal.html
+Disallow: /results.html
+Disallow: /fees.html
+Disallow: /e-learning.html
+Disallow: /library.html
+Disallow: /portal-roadmap.html
+
+Sitemap: https://www.gbnpsf.cm/sitemap.xml

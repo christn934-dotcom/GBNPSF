@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>School management system · integration roadmap | Grace Bilingual Foumban</title>
+  <meta name="description" content="How the reserved portal modules of Grace Bilingual Nursery and Primary School, Foumban will connect: student, parent and teacher portals, results, fees, e-learning and library.">
+  <link rel="canonical" href="https://www.gbnpsf.cm/portal-roadmap.html">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#17362a">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Grace Bilingual Nursery &amp; Primary School">
+  <meta property="og:title" content="School management system · integration roadmap">
+  <meta property="og:description" content="What each reserved portal module will hold, and how the front end connects to a backend.">
+  <meta property="og:url" content="https://www.gbnpsf.cm/portal-roadmap.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Instrument+Sans:ital,wght@0,400..600;1,400..500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="portal">
+  <div data-site-header></div>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="wrap">
+        <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page">Management system</li>
+        </ol>
+        <div class="page-hero__grid">
+          <div>
+            <p class="eyebrow"><span>01</span> School management system</p>
+            <h1>The portals are built. The <em class="accent">backend</em> comes next.</h1>
+            <p class="lede">Seven modules are reserved, styled and reachable from the navigation. This page records what each one will hold and how it connects.</p>
+          </div>
+          <div class="page-hero__media">
+            <div class="ph" data-label="Upload School Image Here" data-hint="1600 × 1000 px"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><span>02</span> Modules</p>
+            <h2>What each portal will do.</h2>
+          </div>
+          <p class="lede">Every row below has a live page today: a sign-in shell, a description of the features and a route back to the public site. None of them holds real data yet, by design.</p>
+        </div>
+
+        <div class="table-wrap">
+          <table class="data-table">
+            <caption>Modules reserved in this build</caption>
+            <thead>
+              <tr>
+                <th scope="col">Module</th>
+                <th scope="col">What it will hold</th>
+                <th scope="col">API hook (js/config.js)</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong><a href="student-portal.html">Student Portal</a></strong></td>
+                <td>Timetable, homework, results summary, library loans</td>
+                <td><code>/auth/session</code>, <code>/students/:id/results</code></td>
+                <td><span class="tag tag--gold">Shell ready</span></td>
+              </tr>
+              <tr>
+                <td><strong><a href="parent-portal.html">Parent Portal</a></strong></td>
+                <td>Attendance, reports, fee statements, teacher messages</td>
+                <td><code>/auth/session</code>, <code>/students/:id/fees</code></td>
+                <td><span class="tag tag--gold">Shell ready</span></td>
+              </tr>
+              <tr>
+                <td><strong><a href="teacher-portal.html">Teacher Portal</a></strong></td>
+                <td>Class lists, registers, mark entry, lesson plans</td>
+                <td><code>/auth/session</code> with staff role</td>
+                <td><span class="tag tag--gold">Shell ready</span></td>
+              </tr>
+              <tr>
+                <td><strong><a href="results.html">Online Results</a></strong></td>
+                <td>Assessment and examination marks, position, printable report</td>
+                <td><code>/students/:id/results</code></td>
+                <td><span class="tag tag--gold">Shell ready</span></td>
+              </tr>
+              <tr>
+                <td><strong><a href="fees.html">Fee Payments</a></strong></td>
+                <td>Statements, mobile money and transfer, receipts, plans</td>
+                <td><code>/students/:id/fees</code></td>
+                <td><span class="tag tag--clay">Needs payment provider</span></td>
+              </tr>
+              <tr>
+                <td><strong><a href="e-learning.html">E-Learning</a></strong></td>
+                <td>Recorded lessons, reading packs, marked exercises</td>
+                <td><code>/elearning/courses</code></td>
+                <td><span class="tag tag--gold">Shell ready</span></td>
+              </tr>
+              <tr>
+                <td><strong><a href="library.html">Library System</a></strong></td>
+                <td>Catalogue, reservations, loans, class reading lists</td>
+                <td><code>/library/search</code></td>
+                <td><span class="tag tag--gold">Shell ready</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout" style="margin-top:1.75rem">
+          <strong>Honest status.</strong> Sign-in forms currently run in preview mode: they validate
+          input and tell the user plainly that nothing was sent. No student data exists in this
+          website, and no credentials are stored.
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--paper2">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><span>03</span> How it connects</p>
+            <h2>Three pieces of work, in order.</h2>
+          </div>
+          <p class="lede">The front end was written so that connecting a backend is configuration plus one API layer, not a rebuild.</p>
+        </div>
+
+        <div class="split split--top">
+          <div>
+            <ol class="timeline">
+              <li class="timeline__item">
+                <span class="timeline__year">Step 1 · Data</span>
+                <h3>Export the school's records</h3>
+                <p>Pupil register, guardians, classes, timetables, assessment marks and the fee ledger. Agree one identifier per pupil (for example <code>GBN-2026-0148</code>) and use it everywhere.</p>
+              </li>
+              <li class="timeline__item">
+                <span class="timeline__year">Step 2 · Service</span>
+                <h3>Build or buy the API</h3>
+                <p>A small server with four resources — pupils, marks, fees, library — is enough to power all seven modules. Session-based authentication with roles for pupil, guardian and staff.</p>
+              </li>
+              <li class="timeline__item">
+                <span class="timeline__year">Step 3 · Wire it up</span>
+                <h3>Fill in js/config.js</h3>
+                <p>Set <code>api.baseUrl</code> and the endpoint paths. Swap each portal shell's preview handler for the real sign-in call, then render the data the API returns.</p>
+              </li>
+            </ol>
+          </div>
+
+          <div>
+            <div class="prose">
+              <h3 style="margin-top:0">Rules we would keep</h3>
+              <ul class="checklist">
+                <li>A guardian sees only the children attached to their account; the server enforces it, not the browser.</li>
+                <li>Marks are visible to a pupil only after the head of department publishes the term.</li>
+                <li>Fee receipts are issued by the server and never editable in the browser.</li>
+                <li>Every sign-in is logged with a timestamp; passwords are hashed, never stored in plain text.</li>
+                <li>Personal data is served over HTTPS only, and the public website keeps no pupil records at all.</li>
+              </ul>
+
+              <h3>What the school needs to provide</h3>
+              <p>
+                A register export, the assessment policy, a fee structure with payment channels, and a
+                named person responsible for accounts. Without those four, a management system becomes
+                a second, contradictory record — the thing this project is designed to avoid.
+              </p>
+
+              <div class="callout">
+                <strong>Ready when you are.</strong> The navigation, styling, routing and page
+                structure will not change. Connecting a backend means editing <code>js/config.js</code>
+                and the portal handler in <code>js/site.js</code>.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band--forest cta-band">
+      <div class="wrap">
+        <div class="cta-band__inner">
+          <div>
+            <p class="eyebrow" style="color:var(--gold-soft)"><span>04</span> Questions</p>
+            <h2>Want to talk through the rollout?</h2>
+            <p class="lede">The head teacher and bursar can walk through the modules and what staff would need to maintain.</p>
+          </div>
+          <div class="cta-band__aside">
+            <a class="btn btn--light" href="contact.html">Contact the office</a>
+            <a class="btn btn--ghost" style="--btn-fg:var(--cream);border-color:rgba(247,243,234,.35)" href="index.html">Back to the website</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div data-site-footer></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
