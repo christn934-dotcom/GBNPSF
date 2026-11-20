@@ -393,7 +393,7 @@
           '<div class="event__date"><span>' + d.month + "</span><strong>" + d.day + "</strong></div>" +
           "<div><h3>" + e.title + "</h3><p>" + e.desc + "</p>" +
           '<div class="event__meta"><span>' + e.time + "</span><span>" + e.place + "</span></div></div>" +
-          '<div class="event__cta"><span class="tag tag--gold">' + e.tag + "</span></div>" +
+          '<div class="event__cta"><span class="tag tag--blue">' + e.tag + "</span></div>" +
           "</article>";
       }).join("");
     }

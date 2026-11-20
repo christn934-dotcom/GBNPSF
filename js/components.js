@@ -78,10 +78,10 @@
 
   var CREST =
     '<svg class="brand__mark" viewBox="0 0 48 48" role="img" aria-label="Grace Bilingual school crest">' +
-    '<path d="M24 3.5 43 10v15.5C43 35 34.6 42.4 24 45 13.4 42.4 5 35 5 25.5V10Z" fill="none" stroke="#c9a55f" stroke-width="1.5"/>' +
-    '<path d="M24 8.2 38.5 13v12.4c0 7.4-6.2 13.2-14.5 15.4-8.3-2.2-14.5-8-14.5-15.4V13Z" fill="#17362a"/>' +
-    '<path d="M17 20.5c2.6-1.4 4.9-1.4 7 0 2.1-1.4 4.4-1.4 7 0v9.6c-2.6-1.3-4.9-1.3-7 0-2.1-1.3-4.4-1.3-7 0Z" fill="none" stroke="#e7d7b2" stroke-width="1.3" stroke-linejoin="round"/>' +
-    '<path d="M24 21v9" stroke="#c9a55f" stroke-width="1.1"/>' +
+    '<path d="M24 3.5 43 10v15.5C43 35 34.6 42.4 24 45 13.4 42.4 5 35 5 25.5V10Z" fill="none" stroke="#9ec4e8" stroke-width="1.5"/>' +
+    '<path d="M24 8.2 38.5 13v12.4c0 7.4-6.2 13.2-14.5 15.4-8.3-2.2-14.5-8-14.5-15.4V13Z" fill="#14345c"/>' +
+    '<path d="M17 20.5c2.6-1.4 4.9-1.4 7 0 2.1-1.4 4.4-1.4 7 0v9.6c-2.6-1.3-4.9-1.3-7 0-2.1-1.3-4.4-1.3-7 0Z" fill="none" stroke="#dbe8f7" stroke-width="1.3" stroke-linejoin="round"/>' +
+    '<path d="M24 21v9" stroke="#9ec4e8" stroke-width="1.1"/>' +
     "</svg>";
 
   function brand(href) {
@@ -189,7 +189,7 @@
       '<form class="newsletter" data-form="newsletter" novalidate>' +
       '<label class="sr-only" for="nl-email">Email address</label>' +
       '<input id="nl-email" name="email" type="email" placeholder="Your email address" required autocomplete="email">' +
-      '<button class="btn btn--gold btn--sm" type="submit">Subscribe</button>' +
+      '<button class="btn btn--blue btn--sm" type="submit">Subscribe</button>' +
       '<p class="form-status" data-form-status hidden role="status"></p>' +
       "</form></div>" +
       '<div class="socials" style="margin-top:1.5rem">' + socials + "</div>" +
@@ -282,7 +282,7 @@
       '<div class="portal-shell">' +
       '<aside class="portal-shell__aside">' +
       "<div>" +
-      '<p class="eyebrow" style="color:var(--gold-soft)">School management system</p>' +
+      '<p class="eyebrow" style="color:var(--blue-soft)">School management system</p>' +
       "<h1>" + p.title + "</h1>" +
       "<p>" + p.lede + "</p>" +
       '<ul class="portal-list">' + features + "</ul>" +
